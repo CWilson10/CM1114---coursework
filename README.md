@@ -1,2 +1,2 @@
 # CM1114---coursework
-## Coursework Website by Caelen
+## Coursework Website by Caelen Wilson
