@@ -21,10 +21,20 @@ body {
     display: inline;
 }
 
+nav ul{
+    margin: 0;
+    padding: 0;
+    overflow: hidden; 
+ }
+ 
+
 nav li{
     border: 2px solid black;
     background-color: grey;
     list-style-type: none;
+    float: left;
+    width: 150px;
+    padding: 16px;
 }
 
 nav li a {
@@ -61,3 +71,4 @@ Table th{
     background-color: grey;
     color: white;
 }
+
