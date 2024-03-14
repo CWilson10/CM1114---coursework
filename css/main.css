@@ -7,6 +7,10 @@ body {
     font-size: 20;
     padding: 10px;
     font-weight: bold;
+    margin: auto;
+}
+.formheader {
+    float: right;
 }
 
 #logo {
@@ -21,10 +25,17 @@ body {
     display: inline;
 }
 
+nav{
+    width: 100%;
+    background-color: grey;
+    border-color: black;
+}
+
 nav ul{
     margin: 0;
     padding: 0;
     overflow: hidden; 
+    margin: auto;
  }
  
 
@@ -35,12 +46,15 @@ nav li{
     float: left;
     width: 150px;
     padding: 16px;
+    margin: 0px;
 }
+
 
 nav li a {
     color: white;
     text-align: center;
     text-decoration: none;
+    margin: auto;
 }
 
 nav li:hover {
@@ -72,3 +86,52 @@ Table th{
     color: white;
 }
 
+#right-col{
+    float: left;
+    padding-left: 25;
+    width: 25%;
+}
+
+#left-col{
+    float: left;
+    width: 65%;
+    padding-bottom: 5px;
+}
+
+fieldset{
+    margin: auto;
+    border: 2px solid gray;
+    padding: 10px;
+}
+
+.carousel{
+    width: 70%;
+    height: 70%;
+}
+
+.gallery-img{
+    padding-top: 20px;
+    width: 100%;
+    height: 16%;
+}
+
+#img-gallery{
+    padding-top: 10px;
+}
+
+#img-gallery .row{
+    margin-bottom: 10px;
+}
+
+.carousel-item{
+    width: 100%;
+    height: 100%;
+}
+
+.row{
+    padding-top: 10px;
+}
+
+.members{
+    padding-left: 20px;
+}
