@@ -10,6 +10,14 @@
     </head>
 
     <body>
+        <form class="formheader">
+            <fieldset>
+                <input type = "text" name = "Email" placeholder="Email"/>
+                <input type = "text" name = "Password" placeholder="Password" />
+                <button type="button" value = "Login" onclick="login()">Log in</button>
+            </fieldset>
+        </form>
+
         <nav>
             <ul>
                 <li><a href="contact_us.html"> Contact us</a></li>
@@ -149,5 +157,19 @@
         <aside></aside>
 
         <footer></footer>
+
+        <script>
+        var counter = 2
+
+        function login(){
+            if(counter % 2 == 0){
+                alert('You have been logged in');
+            }
+            else{
+                alert('You have been logged out');
+            }
+            counter += 1;
+        }
+        </script>
     </body>
 <html>

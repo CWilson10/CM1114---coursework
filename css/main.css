@@ -88,8 +88,8 @@ Table th{
 
 #right-col{
     float: left;
-    padding-left: 25;
-    width: 25%;
+    padding-left: 25px;
+    width: 25;
 }
 
 #left-col{
@@ -110,9 +110,10 @@ fieldset{
 }
 
 .gallery-img{
-    padding-top: 20px;
+    margin-top: 20px;
     width: 100%;
     height: 16%;
+    filter: blur(4px);
 }
 
 #img-gallery{
