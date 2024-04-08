@@ -136,3 +136,14 @@ fieldset{
 .members{
     padding-left: 20px;
 }
+
+#article{
+    border: 2px solid gray;
+    margin-right: 10%;
+}
+
+#article-image{
+    margin-top: 0.175%;
+    float: left;
+    width: 8%;
+}
