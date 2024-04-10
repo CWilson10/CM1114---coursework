@@ -42,9 +42,21 @@
                 <ol>
                     <li>Do not be racist</li>
                     <li>Be kind</li>
-                    <li> </li>
+                    <li>Do not be toxic </li>
+                    <li>Have fun</li>
+                    <li>All games are welcome</li>
+                    <li>Follow the law</li>
                 </ol>
             </div>
+            <p id = "rules"> To report a member use this form </p>
+            <form id = "rules" name = "reportForm">
+                <fieldset>
+                <input type = "text" name = "Name" placeholder="Name"><br><br>
+                <textarea name = "Reason" placeholder="Reason for submitting report"></textarea><br><br>
+                <input type = "file" name = "Evidence" placeholder="Evidence"><br><br>
+                <button type="button" value = "report" onclick="reportMember()">Submit report</button>
+                </fieldset>
+            </form>
         </main>
 
         <aside></aside>
@@ -78,6 +90,31 @@
         else if(loggedIn == true){
             alert('You have been logged out');
             loggedIn = false
+        }
+    };
+
+    function reportMember(){
+        var name = document.forms["reportForm"]["Name"].value;
+        var reason = document.forms["reportForm"]["Reason"].value;
+        var evidence = document.forms["reportForm"]["Evidence"].value;
+        var valid = new Boolean(true)
+
+        if (name == ""){
+          alert("You must input a name!")
+          valid = false
+        }else{
+            if (reason == ""){
+                alert("You must input a reason!")
+                valid = false
+            }else if(evidence == ""){
+                alert("You must input a evidence file")
+                valid = false
+          }
+      }
+
+        if(valid == true){
+            alert('Report has been submitted');
+            loggedIn = true;
         }
     };
         </script>
