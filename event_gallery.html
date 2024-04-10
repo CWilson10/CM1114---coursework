@@ -16,11 +16,11 @@
         </div>
     </header>
 
-        <form class="formheader">
+        <form class="formheader" name = "loginForm">
             <fieldset>
                 <input type = "text" name = "Email" placeholder="Email">
                 <input type = "text" name = "Password" placeholder="Password" >
-                <button type="button" value = "Login" onclick="login()">Log in</button>
+                <button type="button" value = "Login" onclick="loginClick()">Log in</button>
             </fieldset>
         </form>
 
@@ -177,26 +177,67 @@
                     </tr>
                     </table>
             </div>
+            <p> Want to recommend an event? tell us below! </p>
+            <form name = "event"> 
+                <label for = "event_title">Event name:</label>
+                        <input type = "text" id = "event_title" name = "event_title" placeholder="Event name">
+                <label for = "event_date">Event date:</label>
+                        <input type = "date" id = "event_date" name = "event_date">
+                <button type="button" value = "submit" onclick="submit_event()">Submit!</button>
+            </form>
+
         </main>
 
         <aside></aside>
 
         <footer>
+            <br>
             <p> Copyright Caelen Wilson 2024 </p> 
         </footer>
 
         <script>
-        var counter = 2
+        var loggedIn = new Boolean(false)
 
-        function login(){
-            if(counter % 2 == 0){
+        function loginClick(){
+            var email = document.forms["loginForm"]["Email"].value;
+            var password = document.forms["loginForm"]["Password"].value;
+            var valid = new Boolean(true)
+            
+            if (email == "" && loggedIn == false){
+                alert("You must input a email!")
+                valid = false
+            }else{
+                if (password == "" && loggedIn == false){
+                    alert("You must input a password!")
+                    valid = false
+                }
+            }
+
+            if(loggedIn == false && valid == true){
                 alert('You have been logged in');
+                loggedIn = true;
             }
-            else{
+            else if(loggedIn == true){
                 alert('You have been logged out');
+                loggedIn = false
             }
-            counter += 1;
-        }
+        };
+
+        function submit_event(){
+            var title = document.forms["event"]["event_title"].value;
+            var date = document.forms["event"]["event_date"].value;
+            if (title == "") {
+                alert("An event must have a title!");
+            }
+            else {
+                if (date.length == 0) {
+                    alert("An event must have a date!");
+                }
+                else {
+                    alert("Event submitted! The society will contact you soon!");
+                }
+            }
+        };
         </script>
     </body>
 </html>

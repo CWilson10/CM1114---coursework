@@ -16,11 +16,11 @@
       </div>
     </header>
 
-      <form class="formheader">
+      <form class="formheader" name = "loginForm">
         <fieldset>
         <input type = "text" name = "Email" placeholder="Email">
         <input type = "text" name = "Password" placeholder="Password">
-        <button type="button" value = "Login" onclick="login()">Log in</button>
+        <button type="button" value = "Login" onclick="loginClick()">Log in</button>
         </fieldset>
     </form>
         <nav>
@@ -65,15 +65,32 @@
         <script>
         var counter = 2
 
-        function login(){
-            if(counter % 2 == 0){
-              alert('You have been logged in');
+        var loggedIn = new Boolean(false)
+
+    function loginClick(){
+        var email = document.forms["loginForm"]["Email"].value;
+        var password = document.forms["loginForm"]["Password"].value;
+        var valid = new Boolean(true)
+    
+        if (email == "" && loggedIn == false){
+            alert("You must input a email!")
+            valid = false
+        }else{
+            if (password == "" && loggedIn == false){
+                alert("You must input a password!")
+                valid = false
             }
-            else{
-              alert('You have been logged out');
-            }
-            counter += 1;
-          }
+        }
+
+        if(loggedIn == false && valid == true){
+            alert('You have been logged in');
+            loggedIn = true;
+        }
+        else if(loggedIn == true){
+            alert('You have been logged out');
+            loggedIn = false
+        }
+    };
         
         function highlight(image){
             image.style = "border: solid blue 2px";

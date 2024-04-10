@@ -16,11 +16,11 @@
     </div>
     </header>
 
-      <form class="formheader">
+      <form class="formheader" name = "loginForm">
         <fieldset>
         <input type = "text" name = "Email" placeholder="Email">
         <input type = "text" name = "Password" placeholder="Password">
-        <button type="button" value = "Login" onclick="login()">Log in</button>
+        <button type="button" value = "Login" onclick="loginClick()">Log in</button>
         </fieldset>
     </form>
 
@@ -41,8 +41,10 @@
             </div>
             <article id = "article">
               <img src="Images/logo.jfif" alt="Logo" id = "article-image">
-              <h2>aaaaaaaa</h2>
-              <p>aaaaaaaa</p>
+              <div id = "article-text">
+                  <h2>aaaaaaaa</h2>
+                  <p>aaaaaaaa</p>
+              </div>
             </article><br>
             <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
@@ -92,17 +94,32 @@
         </footer>
 
         <script>
-          var counter = 2
+        var loggedIn = new Boolean(false)
 
-          function login(){
-          if(counter % 2 == 0){
+        function loginClick(){
+        var email = document.forms["loginForm"]["Email"].value;
+        var password = document.forms["loginForm"]["Password"].value;
+        var valid = new Boolean(true)
+
+        if (email == "" && loggedIn == false){
+          alert("You must input a email!")
+          valid = false
+        }else{
+            if (password == "" && loggedIn == false){
+                alert("You must input a password!")
+                valid = false
+          }
+      }
+
+        if(loggedIn == false && valid == true){
             alert('You have been logged in');
-          }
-          else{
+            loggedIn = true;
+        }
+        else if(loggedIn == true){
             alert('You have been logged out');
-          }
-    counter += 1;
-}
+            loggedIn = false
+        }
+    };
         </script>
     </body>
 </html>
