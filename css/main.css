@@ -104,7 +104,6 @@ Table th{
 
 fieldset{
     margin: auto;
-    border: 2px solid gray;
     padding: 10px;
 }
 
@@ -161,4 +160,8 @@ fieldset{
 footer{
     float: left;
     width: 100%;
+}
+
+#contacusform{
+    border: 2px solid grey;
 }
