@@ -160,7 +160,7 @@ footer{ /* Styling for footer */
     border: 3px solid black;
 }
  
-#rules{ /* Styling for rules */
+.rules{ /* Styling for rules */
     border: 3px solid black;
     text-align: center;
     align-items: center;
