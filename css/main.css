@@ -173,3 +173,9 @@ footer{
     clear: both;
     display: table;
   }
+
+#about_us_video{
+    float: right;
+    margin-right: 10px;
+    margin-top: 10px;
+}
