@@ -2,18 +2,18 @@ body {
     background-color: white;
 }
 
-.header {
+.header { /* Header style */
     background-color: whitesmoke;
     font-size: 20;
     padding: 10px;
     font-weight: bold;
     margin: auto;
 }
-.formheader {
+.formheader { /* form header style */
     float: right;
 }
 
-#logo {
+#logo { /* logo for top bar */
     float: left;
     height: auto;
     width: 50px;
@@ -21,17 +21,17 @@ body {
     padding-top: 5px;
 }
 
-#h1 {
+#h1 { /* header 1 styling */
     display: inline;
 }
 
-nav{
+nav{ /* nav bar styling */
     width: 100%;
     background-color: grey;
     border-color: black;
 }
 
-nav ul{
+nav ul{ /* Styling for lists */
     margin: 0;
     padding: 0;
     overflow: hidden; 
@@ -39,7 +39,7 @@ nav ul{
  }
  
 
-nav li{
+nav li{ /* Styling for nav bar */
     border: 2px solid black;
     background-color: grey;
     list-style-type: none;
@@ -50,116 +50,116 @@ nav li{
 }
 
 
-nav li a {
+nav li a { /* Styling for nav bar */
     color: white;
     text-align: center;
     text-decoration: none;
     margin: auto;
 }
 
-nav li:hover {
+nav li:hover { /* Stylinb for nav bar */
     background-color: blue;
 }
 
-.active {
+.active { /* Styling for nav bar */
     background-color: black;
 }
 
-table {
+table { /* Styling for events galley */
     border-collapse: collapse;
 }
 
-table td, table th{
+table td, table th{ /* Styling for events galley */
     border: 2px solid grey;
     width: 10%;
     padding: 0.5%;
     font-size: 10pt;
 }
 
-Table tr:nth-child(even){
+Table tr:nth-child(even){ /* Styling for events galley */
     background-color: white;
 }
 
-Table tr:hover{
+Table tr:hover{ /* Styling for events galley */
     background-color: orange;
 }
 
-Table th{
+Table th{ /* Styling for events galley */
     background-color: grey;
     color: white;
     text-align: center;
 }
 
-#right-col{
+#right-col{ /* Styling for contact us page */
     float: left;
     padding-left: 25px;
     width: 25;
 }
 
-#left-col{
+#left-col{ /* Styling for contact us page */
     float: left;
     width: 65%;
     padding-bottom: 5px;
 }
 
-fieldset{
+fieldset{ /* Styling for forms */
     margin: auto;
     padding: 10px;
 }
 
-.carousel{
+.carousel{ /* Styling for carousel */
     margin-top: 10px;
 }
 
-#carouselExampleCaptions .carousel-item img {  
+#carouselExampleCaptions .carousel-item img {   /* Styling for carousel image */
     width: auto;
     height: auto;
     max-height: 550px;
 }
 
-.gallery-img{
+.gallery-img{ /* Styling for gallery image */
     margin-top: 20px;
     width: 100%;
     height: 16%;
     filter: blur(4px);
 }
 
-#img-gallery .row{
+#img-gallery .row{ /* Styling for gallery row */
     margin-bottom: 10px;
 }
 
-.row{
+.row{ /* Styling for gallery row */
     padding-top: 10px;
 }
 
-.members{
+.members{ /* Styling for members */ 
     padding-left: 20px;
 }
 
-article {
+article { /* Styling for article in home page */
     border: 3px solid gray;
     padding: 5px;
 }
 
-#article-image{
+#article-image{ /* Styling for article image */
     float: left;
     width: 10%;
 }
 
-footer{
+footer{ /* Styling for footer */
     float: left;
     width: 100%;
 }
 
-#contacusform{
+#contacusform{ /* Styling for contact us form */
     border: 2px solid grey;
 }
 
-#FAQ{
+#FAQ{ /* Styling for FAQ */
     border: 3px solid black;
 }
-
-#rules{
+ 
+#rules{ /* Styling for rules */
     border: 3px solid black;
     text-align: center;
     align-items: center;
@@ -168,13 +168,13 @@ footer{
     width: 50%;
 }
 
-.clearfix::after {
+.clearfix::after { /* fixing article */
     content: "";
     clear: both;
     display: table;
   }
 
-#about_us_video{
+#about_us_video{ /* Styling for intro video */
     float: right;
     margin-right: 10px;
     margin-top: 10px;
